@@ -1,5 +1,8 @@
 FROM mcr.microsoft.com/devcontainers/python:1-3.11-bullseye
 
+# Instalar las dependencias
+RUN pip install psycopg2
+
 ENV PYTHONUNBUFFERED 1
 
 # [Optional] If your requirements rarely change, uncomment this section to add them to the image.
